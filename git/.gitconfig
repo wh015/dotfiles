@@ -1,0 +1,14 @@
+[user]
+    email = xxx@xxx.xx
+    name = xxx
+
+[core]
+    editor = vim
+
+[alias]
+    ch = checkout
+    co = commit -a
+    coa = commit -a --amend
+    
+[pull]
+    rebase = true
