@@ -3,6 +3,11 @@ colorscheme gruvbox
 set t_Co=256
 set background=dark
 
+" Setup lightline
+let g:lightline = { 'colorscheme': 'gruvbox' }
+set laststatus=2
+set noshowmode
+
 " Setup editor
 filetype on
 filetype plugin on
@@ -13,6 +18,7 @@ set showcmd
 set hlsearch
 set number
 
+" Highlight trailing whitespaces
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
 
@@ -22,7 +28,7 @@ set softtabstop=4
 set smarttab
 set expandtab
 set smartindent
-autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+"autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 
 " Setup key bindings
 " Remove trailing whitespaces
