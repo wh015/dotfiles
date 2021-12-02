@@ -1,15 +1,17 @@
 [user]
-    email = xxx@xxx.xx
-    name = xxx
+    name = author
+    email = author@mail.here
 
 [core]
     editor = vim
+    pager = less -FR
 
 [alias]
-    ch = checkout
     st = status
+    ch = checkout
     co = commit -a
     coa = commit -a --amend
+    am3 = am --3way --ignore-whitespace --ignore-space-change --whitespace=nowarn
     lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 
