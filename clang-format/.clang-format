@@ -1,0 +1,12 @@
+BasedOnStyle: WebKit
+Language: Cpp
+IndentCaseLabels: true
+ColumnLimit: 120
+AlignConsecutiveAssignments: true
+AlignTrailingComments: true
+AlwaysBreakAfterReturnType: TopLevelDefinitions
+AllowShortFunctionsOnASingleLine: None
+AlignAfterOpenBracket: Align
+CompactNamespaces: true
+FixNamespaceComments: true
+NamespaceIndentation: None
