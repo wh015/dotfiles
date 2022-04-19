@@ -15,7 +15,7 @@ menu() {
     }
 
     [ -n "${items[$choice]}" ] && {
-        (cd ${items[$choice]} && ./install.sh)
+        (cd ${items[$choice]}; ./install.sh)
         wait
     }
 

@@ -10,10 +10,8 @@ tpm() {
         git clone ${REPO} ${TMUXDIR}/tpm
     }
 
-    cd ${TMUXDIR}/tpm
-    git pull
-    ./bin/install_plugins
-    cd $OLDPWD
+    (cd ${TMUXDIR}/tpm; git pull; ./bin/install_plugins)
+    wait
 }
 
 cp .tmux.conf ~

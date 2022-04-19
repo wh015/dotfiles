@@ -9,7 +9,7 @@ lightline() {
     [ -d ${LIGHTLINE_PATH} ] || {
         git clone ${LIGHTLINE_REPO} ${LIGHTLINE_PATH}
     }
-    (cd ${LIGHTLINE_PATH} && git pull)
+    (cd ${LIGHTLINE_PATH}; git pull)
 }
 
 nord() {
