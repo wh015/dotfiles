@@ -29,6 +29,9 @@ IndentSpaces
 set smarttab
 set smartindent
 
+" Remove trailing whitespaces
+:nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+
 " Tab navigation
 nnoremap th  :tabfirst<CR>
 nnoremap tk  :tabnext<CR>
