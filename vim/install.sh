@@ -1,6 +1,6 @@
 #!/bin/sh -x
 
-VIMDIR=$(realpath ~/.vim)
+VIMDIR=$(realpath ~)/.vim
 
 lightline() {
     local LIGHTLINE_REPO="https://github.com/itchyny/lightline.vim"
