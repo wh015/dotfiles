@@ -1,21 +1,21 @@
 [user]
-    name = <name>
-    email = <email>
+	name = <name>
+	email = <email>
 
 [core]
-    editor = vim
-    pager = less -FR
-    checkStat = minimal
-    preloadIndex = true
+	editor = vim
+	pager = less -FR
+	checkStat = minimal
+	preloadIndex = true
 
 [alias]
-    st = status
-    ch = checkout
-    co = commit -a
-    coa = commit -a --amend
-    am3 = am --3way --ignore-whitespace --ignore-space-change --whitespace=nowarn
-    lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	st = status
+	ch = checkout
+	co = commit -a
+	coa = commit -a --amend
+	am3 = am --3way --ignore-whitespace --ignore-space-change --whitespace=nowarn
+	lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 
 [pull]
-    rebase = true
+	rebase = true
