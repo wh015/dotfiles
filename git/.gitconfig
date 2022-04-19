@@ -1,10 +1,12 @@
 [user]
-    name = author
-    email = author@mail.here
+    name = <name>
+    email = <email>
 
 [core]
     editor = vim
     pager = less -FR
+    checkStat = minimal
+    preloadIndex = true
 
 [alias]
     st = status
