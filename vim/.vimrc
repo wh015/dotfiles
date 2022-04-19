@@ -1,10 +1,10 @@
 " Setup colorscheme
-colorscheme gruvbox
+colorscheme nord
 set t_Co=256
 set background=dark
 
 " Setup lightline
-let g:lightline = { 'colorscheme': 'gruvbox' }
+let g:lightline = { 'colorscheme': 'nord' }
 set laststatus=2
 set noshowmode
 
@@ -23,16 +23,12 @@ set number
 :match ExtraWhitespace /\s\+$/
 
 " Setup indentation
-set shiftwidth=4
-set softtabstop=4
+command IndentTabs :set noexpandtab shiftwidth=8 softtabstop=0
+command IndentSpaces :set expandtab shiftwidth=4 softtabstop=4
+IndentSpaces
 set smarttab
-set expandtab
 set smartindent
-"autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 
-" Setup key bindings
-" Remove trailing whitespaces
-:nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 " Tab navigation
 nnoremap th  :tabfirst<CR>
 nnoremap tk  :tabnext<CR>
