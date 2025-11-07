@@ -17,6 +17,8 @@ set wildmenu
 set showcmd
 set hlsearch
 set number
+set nofixeol
+set noeol
 
 " Highlight trailing whitespaces
 :highlight ExtraWhitespace ctermbg=red guibg=red
